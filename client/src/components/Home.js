@@ -1,22 +1,9 @@
 import React from "react";
+import sampleUser from '../sampleUser.json';
 
 function Home(props) {
-  let sampleArr = [
-    {
-      icon: "💙",
-      description: "Limit social media to 3 hours/day",
-      completion: 1,
-      total: 3,
-    },
-    {
-      icon: "🔥",
-      description: "Drink 5 water bottles/day",
-      completion: 4,
-      total: 5,
-    },
-  ];
   const showGoals = () => {
-    return sampleArr.map((eachItem) => {
+    return sampleUser.map((eachItem) => {
       return (
         <div className='goal-bar'>
           <div className='goal-bar-left'>
