@@ -19,16 +19,31 @@
   width: 10vw;
 }
 
-.home {
-  padding: 5vw 0;
+.add-goal-btn{
+  width: 13vw;
+}
+
+h1 {
+  color: mistyrose;
+}
+
+.margin-main {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.bg-color {
   background-color: #404040;
   height: 90vh;
+  padding: 5vw 0;
+}
+
+.home {
   overflow-y: scroll;
 }
 
 .goal-bar {
   color: black;
-  width: 80vw;
   height: 20vw;
   display: flex;
   justify-content: space-between;
