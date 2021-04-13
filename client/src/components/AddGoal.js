@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
 
 function AddGoal(props) {
-    return (
-        <div>
-            <h1>Add goal feature coming soon!</h1>
-        </div>
-    );
+  return (
+    <div className="bg-color">
+      <div className="margin-main">
+        <h1>Add goal feature coming soon!</h1>
+      </div>
+    </div>
+  );
 }
 
 export default AddGoal;
