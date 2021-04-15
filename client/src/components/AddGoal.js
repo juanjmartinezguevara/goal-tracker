@@ -15,10 +15,16 @@ function AddGoal(props) {
       <div className="margin-main">
         <form>
           <label>
-            Goal Description:
-            <input type="text" />
+            <h2>Goal</h2> <br/>
+            <input type="text" placeholder='Goal name' />
+          </label>
+          <label>
+            <h2>Units</h2> <br/>
+            <input type="number" placeholder='Goal count' />
+            <input type="text" placeholder='Goal unit of measurement' />
           </label>
           <div>
+          <h2>Frequency</h2>
             <label>
               <input value="daily" type="radio"></input>Daily
             </label>
@@ -32,6 +38,14 @@ function AddGoal(props) {
               <input value="monthly" type="radio"></input>Monthly
             </label>
           </div>
+          <label>
+            <h2>Start Date</h2> <br/>
+            <input type="date" />
+          </label>
+          <label>
+            <h2>End Date</h2> <br/>
+            <input type="date" />
+          </label>
           <br />
           <input type="submit" value="Submit" onClick={handleSubmit}/>
         </form>
