@@ -10,6 +10,16 @@ function AddGoal(props) {
     event.preventDefault();
   };
 
+  const showDays = () => {
+    return (
+      <div>
+      <input value="monday" type="radio">Monday</input>
+      <input value="tuesday" type="radio">Tuesday</input>
+      <input value="wednesday" type="radio">Wednesday</input>
+      </div>
+    )
+  }
+
   return (
     <div className="bg-color">
       <div className="margin-main">
@@ -26,18 +36,19 @@ function AddGoal(props) {
           <div>
           <h2>Frequency</h2>
             <label>
-              <input value="daily" type="radio"></input>Daily
+              <input value="daily" type="radio"></input><h4 style={{display: 'inline'}}>Daily</h4>
             </label>
             <label>
-              <input value="weekly" type="radio"></input>Weekly
+              <input onClick={() => showDays} value="weekly" type="radio"></input><h4 style={{display: 'inline'}}>Weekly</h4>
             </label>
             <label>
-              <input value="biweekly" type="radio"></input>Biweekly
+              <input onClick={showDays} value="biweekly" type="radio"></input><h4 style={{display: 'inline'}}>Biweekly</h4>
             </label>
             <label>
-              <input value="monthly" type="radio"></input>Monthly
+              <input value="monthly" type="radio"></input><h4 style={{display: 'inline'}}>Monthly</h4>
             </label>
           </div>
+          {showDays}
           <label>
             <h2>Start Date</h2> <br/>
             <input type="date" />
