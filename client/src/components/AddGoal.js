@@ -16,6 +16,10 @@ function AddGoal(props) {
       <input value="monday" type="radio">Monday</input>
       <input value="tuesday" type="radio">Tuesday</input>
       <input value="wednesday" type="radio">Wednesday</input>
+      <input value="thursday" type="radio">Thursday</input>
+      <input value="friday" type="radio">Friday</input>
+      <input value="saturday" type="radio">Saturday</input>
+      <input value="sunday" type="radio">Sunday</input>
       </div>
     )
   }
@@ -39,10 +43,10 @@ function AddGoal(props) {
               <input value="daily" type="radio"></input><h4 style={{display: 'inline'}}>Daily</h4>
             </label>
             <label>
-              <input onClick={() => showDays} value="weekly" type="radio"></input><h4 style={{display: 'inline'}}>Weekly</h4>
+              <input value="weekly" type="radio"></input><h4 style={{display: 'inline'}}>Weekly</h4>
             </label>
             <label>
-              <input onClick={showDays} value="biweekly" type="radio"></input><h4 style={{display: 'inline'}}>Biweekly</h4>
+              <input value="biweekly" type="radio"></input><h4 style={{display: 'inline'}}>Biweekly</h4>
             </label>
             <label>
               <input value="monthly" type="radio"></input><h4 style={{display: 'inline'}}>Monthly</h4>
